@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Task Planner</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <input id="txtTask" type="text" placeholder="Enter task to do">
+      <button id="btnAdd" onclick="printTask()">Add Task</button>
+    </div>
+    <div id="headerBtns">
+      <button id="selectAll" onclick="selectAllTasks()">Select All</button>
+      <button id="deselectAll" onclick="deselectAllTasks()">Deselect All</button>
+      <button id="btnEdit" onclick="editTask()">Edit Task</button>
+      <button id="btnDel" onclick="deleteTask()">Delete Task</button>
+    </div>
+  </header>
+  <h2 id="heading"></h2>
+  <div id="todo">
+    <div id="tasks">
+      <!-- <li>
+        <input type="checkbox" id="task1" name="task1" value="task">
+        <label for="task1">First task</label>
+      </li> -->
+    </div> 
+  </div>
+  <footer>
+    <div id="foot">
+      &#9829; Akhtar Reviews
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+</body>
+
+</html>
